@@ -11,10 +11,10 @@ import {IUniswapV2Factory} from "@uniswap/v2-core/contracts/interfaces/IUniswapV
 import {IUniswapV2Router02} from "@bonga-bera-capital/uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol";
 
 /* Internal Imports */
-import {BeraAggregatorKeys} from "../../storage/BeraAggregatorKeys.sol";
+import {BeraAggregatorKeys} from "../../../storage/BeraAggregatorKeys.sol";
 
 /* Internal Interface Imports */
-import {ITradingTerminal} from "../../../interfaces/terminals/ITradingTerminal.sol";
+import {ITradingTerminal} from "../../../../interfaces/terminals/ITradingTerminal.sol";
 
 contract UniV2Terminal is BeraStorageMixin, BeraAggregatorKeys, ITradingTerminal {
 
