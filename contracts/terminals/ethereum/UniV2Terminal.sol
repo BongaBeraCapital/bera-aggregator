@@ -25,7 +25,7 @@ contract UniV2Terminal is BeraStorageMixin, BeraAggregatorKeys, ITradingTerminal
     ) external view virtual override returns (u60x18_t) {
         return u60x18_t.wrap(0);
     }
-    
+
     function addLiquidity(
         address[] memory inTokens,
         u60x18_t[] memory inAmounts,
@@ -64,8 +64,12 @@ contract UniV2Terminal is BeraStorageMixin, BeraAggregatorKeys, ITradingTerminal
         return;
     }
 
+    function getUniswapV2FactoryAddress() internal view virtual returns (address) {
+        return BeraStorage.getAddress(keccak256(BeraAggregatorKeys.uniswap.v2.factory_address));
+    }
+
     function getUniswapV2Factory() internal view virtual returns (IUniswapV2Factory) {
-        return IUniswapV2Factory(BeraStorage.getAddress(keccak256(BeraAggregatorKeys.uniswap.v2.factory_address)));
+        return IUniswapV2Factory(getUniswapV2FactoryAddress());
     }
 
     function getUniswapV2Pair(address token0, address token1) internal view virtual returns (IUniswapV2Pair) {
