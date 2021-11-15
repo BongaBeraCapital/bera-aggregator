@@ -14,6 +14,7 @@ abstract contract BeraAggregatorKeys {
     _uni internal uniswap = _uni(_v2("uniswap.v2.factory.address"), _v3("uniswap.v2.factory.address"));
     _spky internal spookyswap = _spky("spookyswap.factory.address");
     _sushi internal sushiswap = _sushi("sushiswap.factory.address");
+    _sprt internal spiritswap = _sprt("spiritswap.factory.address");
     
     //=================================================================================================================
     // Definitions
@@ -32,6 +33,10 @@ abstract contract BeraAggregatorKeys {
     }
 
     struct _spky {
+        bytes factory_address;
+    }
+
+    struct _sprt {
         bytes factory_address;
     }
 

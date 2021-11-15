@@ -3,7 +3,7 @@ dependencies:
   - hifi-finance/prb-math@2.4.1
   - uniswap/v2-core@1.0.1
   - BongaBeraCapital/bera-utils@0.0.1-alpha
-  - BongaBeraCapital/bera-storage@0.0.1-alpha
+  - BongaBeraCapital/bera-storage@0.0.0.2-alpha
   - BongaBeraCapital/v2-periphery@1.0.1-alpha
 
 compiler:
@@ -13,7 +13,7 @@ compiler:
       - '@hifi-finance/prb-math=hifi-finance/prb-math@2.4.1'
       - '@uniswap/v2-core=uniswap/v2-core@1.0.1'
       - '@bonga-bera-capital/bera-utils=BongaBeraCapital/bera-utils@0.0.1-alpha'
-      - '@bonga-bera-capital/bera-storage=BongaBeraCapital/bera-storage@0.0.1-alpha'
+      - '@bonga-bera-capital/bera-storage=BongaBeraCapital/bera-storage@0.0.0.2-alpha'
       - '@bonga-bera-capital/uniswap/v2-periphery=BongaBeraCapital/v2-periphery@1.0.1-alpha'
 
 networks:

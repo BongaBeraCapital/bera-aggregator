@@ -65,7 +65,7 @@ contract UniV2Terminal is BeraStorageMixin, BeraAggregatorKeys, ITradingTerminal
     }
 
     function getUniswapV2FactoryAddress() internal view virtual returns (address) {
-        return BeraStorage.getAddress(keccak256(BeraAggregatorKeys.uniswap.v2.factory_address));
+        return BeraStorage_.getAddress(keccak256(BeraAggregatorKeys.uniswap.v2.factory_address));
     }
 
     function getUniswapV2Factory() internal view virtual returns (IUniswapV2Factory) {

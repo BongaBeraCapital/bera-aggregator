@@ -6,8 +6,8 @@ import {BeraAggregatorKeys} from "../../../storage/BeraAggregatorKeys.sol";
 import {UniV2Terminal} from "../ethereum/UniV2Terminal.sol";
 
 
-contract SpookyTerminal is UniV2Terminal {
+contract SpiritTerminal is UniV2Terminal {
     function getUniswapV2FactoryAddress() internal view virtual override returns (address) {
-        return BeraStorage_.getAddress(keccak256(BeraAggregatorKeys.spookyswap.factory_address));
+        return BeraStorage_.getAddress(keccak256(BeraAggregatorKeys.spiritswap.factory_address));
     }
 }
